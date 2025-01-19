@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./App.css">
+    <style>
+        body{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;
+        }
+        .content{
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            text-align: center;
+            line-height: 80vh;
+            display: block;
+            font-size: 60px;
+        }
+        .scroll{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 202, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .block{
+            height: 200px;
+            width: 300px;
+            margin: 50px;
+            border: 1px solid black;
+        }
+        .block:nth-child(1){
+            background-color: blue;
+        }
+        .block:nth-child(2){
+            background-color: aquamarine;
+        }
+        .block:nth-child(3){
+            background-color: chocolate;
+        }
+        .block:nth-child(4){
+            background-color: cornflowerblue;
+        }
+        .block:nth-child(5){
+            background-color: red;
+        }
+        @keyframes animator {
+            from{
+                
+                opacity: 0;
+                
+            }
+            to{
+                opacity: 1;
+                clip-path: inset(0 0 0 0 );
+            }
+        }
+        .block{
+            animation: animator linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+        .content{
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content">
+            <h1>Hello World!</h1>
+        </div>
+        <div class="scroll">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+</html>
