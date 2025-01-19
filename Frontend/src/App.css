@@ -1,42 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Press+Start+2P&display=swap');
+:root{
+  --font-color: white;
+  --background-color : black;
+  --font--family: "Josefin Sans", serif;
+}
+
+
 body{
+  font-family: var(--font--family);
   width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
   overflow-y: auto;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  object-fit: cover;
   /* ให้เลื่อนได้ */
   }
+  h1{
+    font-size: 20vh;
+  }
+  h2{
+    font-size: 15vh;
+  }
+  h4{
+    scale: 1.5;
+  }
   .content{
+     padding-top: 20vh;
       width: 100%;
       height: 100vh;
-      background-color: white;
+      background-color: var(--background-color);
       text-align: center;
-      line-height: 80vh;
       display: block;
-      font-size: 60px;
+      overflow-y: scroll;
+  }
+  .nav-role{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+  .sec{
+    display: flex;
+    gap: 5px;
+  }
+  .sec:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.3s;
+  }
+  .sec .sec-pic{
+    background-color: white;
+    width: 2vh;
+    height: 1.8vh;
+    border-radius: 60%;
   }
   .scroll{
       width: 100%;
-      height: 100vh;
-      background-color: rgb(255, 202, 255);
+      height: 300vh;
       display: flex;
       flex-direction: column;
       align-items: center;
   }
+  .asking{
+    width: 100%;
+    height: 80vh;
+    animation: animator;
+    animation-timeline: view();
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
   .block{
-      height: 200px;
-      width: 300px;
-      margin: 50px;
-      border: 1px solid black;
+    min-height: 35vh;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width:  25%;
+    margin: 50px;
+    border: 1px solid rgb(255, 255, 255);
+}
+@media screen and (max-width: 768px) {
+  .top-card {
+    flex-direction: column; /* จัดเรียงเนื้อหาในแนวตั้ง */
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .top-text {
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top-card {
+    padding: 15px;
+  }
+
+  .text-top h4 {
+    font-size: 18px; /* ลดขนาดตัวอักษร */
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+  .top-card{
+    align-items: center;
+    max-width: 800px;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  .top-text span{
+    font-weight: bolder;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .text-top{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .button{
+    padding: 8px;
+  }
+  .button:hover{
+    scale: 1.2;
+    transition: 0.2s ease-in-out;
+    animation: button-animate 0.2s ;
+  }
+  @keyframes button-animate {
+    from{
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(10deg);
+    }
+  }
+  svg{
+    padding: 0 50px 0 10px;
+    fill: white
+  }
+  .secondary{
+    color: rgb(186, 186, 186);
   }
   .block:nth-child(1){
-      background-color: blue;
+      border: 1px solid rgb(255, 255, 255);
   }
   .block:nth-child(2){
-      background-color: aquamarine;
+    border: 1px solid rgb(255, 255, 255);
   }
   .block:nth-child(3){
-      background-color: chocolate;
+    
   }
   .block:nth-child(4){
       background-color: cornflowerblue;
@@ -48,15 +176,17 @@ body{
       from{
           
           opacity: 0;
-          
+          scale: 1;
+          clip-path: inset(100 100 0 0);
       }
       to{
           opacity: 1;
+          scale: 1.2;
           clip-path: inset(0 0 0 0 );
       }
   }
   .block{
-      animation: animator linear;
+      animation: animator ease-in-out forwards;
       animation-timeline: view();
       animation-range: entry 0% cover 40%;
       height: 200px;
