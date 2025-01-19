@@ -5,7 +5,7 @@ function App() {
     <div className="container">
       <div className="content">
         <p>"เขียนโค้ดมันง่าย เเต่อธิบายโค้ดมันยาก"</p>
-        <h1>Phakaphol School</h1>
+        <h1>SIT Sandbox</h1>
         <div className="nav-role">
           <div className="sec">
             <div className="sec-pic"></div>Frontend
