@@ -1,19 +1,21 @@
 import "./App.css";
-import { useEffect, useState } from "react";
-
+import { React , useEffect, useState } from "react";
+import { gsap } from "gsap";
+import { Link } from 'react-router-dom';
 function App() {
   const [blocks, setBlocks] = useState([]);
-
+  
   useEffect(() => {
     fetch("https://678dadbfa64c82aeb11dab32.mockapi.io/api/pages/header")
       .then((res) => res.json())
       .then((data) => setBlocks(data))
       .catch((err) => console.error(err));
   }, []);
+  
 
   return (
-    <div className="container">
-      <div className="content">
+          <div className="container" data-barba="wrapper">
+      <div className="content" data-barba="container" data-barba-namespace="home">
         <p>`เขียนโค้ดมันง่าย เเต่อธิบายโค้ดมันยาก`</p>
         <h1>SIT Sandbox</h1>
         <div className="nav-role">
@@ -72,6 +74,7 @@ function App() {
         ))}
       </div>
     </div>
+
   );
 }
 
