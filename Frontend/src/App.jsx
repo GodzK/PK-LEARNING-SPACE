@@ -1,21 +1,22 @@
 import "./App.css";
-import { React , useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 function App() {
   const [blocks, setBlocks] = useState([]);
-  
+  const navigate = useNavigate();  // ใช้ useNavigate สำหรับเปลี่ยนเส้นทาง
   useEffect(() => {
     fetch("https://678dadbfa64c82aeb11dab32.mockapi.io/api/pages/header")
       .then((res) => res.json())
       .then((data) => setBlocks(data))
       .catch((err) => console.error(err));
   }, []);
-  
 
   return (
-          <div className="container" data-barba="wrapper">
-      <div className="content" data-barba="container" data-barba-namespace="home">
+    <div className="container">
+      <div className="content">
         <p>`เขียนโค้ดมันง่าย เเต่อธิบายโค้ดมันยาก`</p>
         <h1>SIT Sandbox</h1>
         <div className="nav-role">
@@ -61,10 +62,15 @@ function App() {
                 </div>
               </div>
               <div className="top-text">
-                <p>{block.card.content.description}</p>
+                <p
+                >
+                  {block.card.content.description}
+                </p>
                 <button
                   className="button"
-                  onClick={() => (window.location.href = block.card.content.button.action)}
+                  onClick={() =>
+                    (window.location.href = block.card.content.button.action)
+                  }
                 >
                   {block.card.content.button.text}
                 </button>
@@ -74,7 +80,6 @@ function App() {
         ))}
       </div>
     </div>
-
   );
 }
 

@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from "gsap";
-
-
+import {motion} from "framer-motion"
 function Learning() {
   return (
-    <div className="learn-container" data-barba="wrapper">
-      <div data-barba="container" data-barba-namespace="learning">
-        <h1>This is Learning Page</h1>
-        <Link to="/" className="button">Go Back to Home</Link>
-      </div>
-    </div>
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -50 }}
+    transition={{ duration: 0.5, delay: 0.3 }} 
+    className='learning-pages'
+  >
+    <h1>SIT Sandbox</h1>
+  </motion.div>
   );
 }
 
