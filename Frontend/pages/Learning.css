@@ -1,0 +1,49 @@
+/* Learning.css */
+
+.learning {
+    height: 50vh; /* Full vertical height */
+    width: 100%;   /* Full horizontal width */
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    justify-content: space-between;
+    font-family: 'Prompt', sans-serif; /* Use the Prompt font */
+    color: rgb(255, 255, 255); /* White text color */
+    padding: 20px;
+}
+
+.learning-header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.learning-pic {
+    display: flex;
+    width: 100%;             /* Full width of the parent */
+    margin-top: 20px;
+}
+
+.images {
+    background-color: white; /* White background */
+    height: 40vh;            /* Set height */
+    width: 90%;              /* Set width */
+    border-radius: 10px;     /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+
+.secondary {
+    font-size: 0.9rem; /* Smaller secondary text */
+    color: #ddd;       /* Light gray for secondary text */
+}
+
+/* Optional: For responsive design */
+@media (max-width: 768px) {
+    .images {
+        width: 80%; /* Reduce width for smaller screens */
+    }
+}
+
+.course-sec{
+    padding: 20px;
+}

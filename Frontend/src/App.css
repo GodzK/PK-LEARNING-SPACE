@@ -27,6 +27,12 @@ body{
   h4{
     scale: 1.5;
   }
+  h5{
+    font-size: 7vh;
+  }
+  h6{
+    
+  }
   .container{
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
