@@ -24,8 +24,8 @@
 
 .images {
     background-color: white; /* White background */
-    height: 40vh;            /* Set height */
-    width: 90%;              /* Set width */
+    height: 20vh;            /* Set height */
+    width: 80%;              /* Set width */
     border-radius: 10px;     /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
@@ -45,5 +45,66 @@
 }
 
 .course-sec{
+    background-color: rgb(56, 56, 56);
     padding: 20px;
+    margin-top: 5%;
 }
+.wrapper{
+    position: absolute;
+    top: 6%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+  }
+  
+  a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    color: black;
+    width: 0;
+    height: 100%;
+    background: #fff9fb;
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: #000000;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+  .images img{
+    width: 100%;
+  }
+  .course-data{
+
+  }
+  h5{
+    font-size: 2rem;
+  }
+  .course-episode{
+    color: white;
+  }

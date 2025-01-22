@@ -8,7 +8,7 @@ function App() {
   const [blocks, setBlocks] = useState([]);
   const navigate = useNavigate();  // ใช้ useNavigate สำหรับเปลี่ยนเส้นทาง
   useEffect(() => {
-    fetch("https://678dadbfa64c82aeb11dab32.mockapi.io/api/pages/header")
+    fetch("https://678dadbfa64c82aeb11dab32.mockapi.io/api/pages/course")
       .then((res) => res.json())
       .then((data) => setBlocks(data))
       .catch((err) => console.error(err));
