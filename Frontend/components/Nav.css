@@ -1,0 +1,12 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+   padding: 2rem 4rem;
+   text-decoration: none;
+   background-color: transparent;
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
