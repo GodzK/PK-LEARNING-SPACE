@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import lessonsData from "../../backend/data";
+import lessonsData from "../backend/data";
 import "../src/App.css";
 import { motion } from "framer-motion";
 import Loading from "./Loading";
