@@ -18,7 +18,7 @@ function Navbar() {
           <Link to="/Contact" style={{color:"black" , textDecoration:"none"}}>Contact</Link>
         </div>
         <div className="nav-item">
-          <Link to="" style={{color:"black" , textDecoration:"none"}}>Course</Link>
+          <Link to="/Course" style={{color:"black" , textDecoration:"none"}}>Course</Link>
         </div>
       </div>
     </div>

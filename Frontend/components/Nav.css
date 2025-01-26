@@ -10,3 +10,9 @@
     display: flex;
     gap: 2rem;
 }
+@media screen and (max-width: 560px) {
+    .nav-links{
+      display: none;
+    }
+    
+  }

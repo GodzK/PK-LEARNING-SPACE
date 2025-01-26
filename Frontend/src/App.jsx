@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import transition from "./transition";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link } from "react-router-dom";
 function App() {
   const [blocks, setBlocks] = useState([]);
   const navigate = useNavigate();  // ใช้ useNavigate สำหรับเปลี่ยนเส้นทาง
@@ -17,7 +17,19 @@ function App() {
 
   return (
     <div className="container">
-     <div className="home-container"><h2>Hello World</h2>
+     <div className="home-container"><h2>SIT SANDBOX</h2>
+     <button className="btn-53">
+  <div className="original">
+    <Link></Link>Explore</div>
+  <div className="letters">
+  <Link to="/about"><span>L</span>
+    <span>E</span>
+    <span>T</span>
+    <span>S</span>
+    <span>G</span>
+    <span>O</span></Link>
+  </div>
+</button>
       </div>
 
     </div>
