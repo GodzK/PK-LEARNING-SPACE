@@ -5,14 +5,14 @@ import transition from "../src/transition";
 import { useNavigate } from "react-router-dom";
 
 const cardsData = [
-  { title: "Frontend", gradientId: "a", stopColor1: "#387EB8", stopColor2: "#366994", path: "/frontend" },
-  { title: "Backend", gradientId: "b", stopColor1: "#F7E018", stopColor2: "#FFCE44", path: "/backend" },
-  { title: "Database", gradientId: "c", stopColor1: "#68A063", stopColor2: "#4CAF50", path: "/database" },
   { title: "Programming", gradientId: "d", stopColor1: "#FF5733", stopColor2: "#FF8D1A", path: "/programming" },
-  { title: "Ux/Ui", gradientId: "e", stopColor1: "#61DAFB", stopColor2: "#21A1F1", path: "/uxui" },
-  { title: "Devops", gradientId: "f", stopColor1: "#E44D26", stopColor2: "#F16529", path: "/devops" },
+  { title: "Frontend", gradientId: "a", stopColor1: "#387EB8", stopColor2: "#366994", path: "/frontend" },
   { title: "Networking", gradientId: "g", stopColor1: "#264DE4", stopColor2: "#2965F1", path: "/networking" },
   { title: "Security", gradientId: "h", stopColor1: "#8E44AD", stopColor2: "#9B59B6", path: "/security" },
+  { title: "Database/Sql", gradientId: "c", stopColor1: "#68A063", stopColor2: "#4CAF50", path: "/database" },
+  { title: "Backend", gradientId: "b", stopColor1: "#F7E018", stopColor2: "#FFCE44", path: "/backend" },
+  { title: "Ux/Ui", gradientId: "e", stopColor1: "#61DAFB", stopColor2: "#21A1F1", path: "/uxui" },
+  { title: "Devops", gradientId: "f", stopColor1: "#E44D26", stopColor2: "#F16529", path: "/devops" },  
 ];
 function Course() {
   const [cards, setCards] = useState([]);
@@ -24,7 +24,7 @@ function Course() {
       const timer = setTimeout(() => {
         setCards((prevCards) => [...prevCards, cardsData[currentIndex]]);
         setCurrentIndex(currentIndex + 1);
-      }, 1000);
+      }, 500);
 
       return () => clearTimeout(timer);
     }
