@@ -16,14 +16,7 @@ COPY . .
 # สร้าง production build
 RUN npm run build
 
-# ใช้ nginx เพื่อเสิร์ฟไฟล์ static
-FROM nginx:alpine
-
-# คัดลอกไฟล์ build ไปยัง nginx
-COPY --from=build /app/dist /usr/share/nginx/html
-
 # เปิดพอร์ต 80
 EXPOSE 80
 
-# รัน nginx
-CMD ["nginx", "-g", "daemon off;"]
+

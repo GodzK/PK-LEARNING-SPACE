@@ -51,7 +51,7 @@ const lessonsData = {
     title: "UX/UI Design",
     content: "Welcome to the UX/UI Design course. Here you will learn about user experience design, user interface design, and tools like Figma and Adobe XD.",
     courses: [
-      { title: "Introduction to UX/UI", description: "Learn the basics of user experience and interface design." , notionLink: "https://www.notion.so/Ux-Ui-13eecd059e42807b809cc3cb0dbb2e6d" },
+      { title: "Introduction to UX/UI", description: "Learn the basics of user experience and interface design." , notionLink: "https://www.notion.so/Ux-Ui-13eecd059e42807b809cc3cb0dbb2e6d", hot: true} , 
       { title: "Design Principles", description: "Understand typography, color theory, and layout design." },
       { title: "Prototyping with Figma", description: "Create interactive prototypes using Figma." },
       { title: "User Research Basics", description: "Learn how to conduct user interviews and usability tests." },
@@ -73,7 +73,7 @@ const lessonsData = {
     title: "Networking",
     content: "Welcome to the Networking course. Here you will learn about network protocols, network security, and tools like Wireshark and Cisco Packet Tracer.",
     courses: [
-      { title: "Networking Basics", description: "Understand the fundamentals of computer networking and protocols." , notionLink: "https://www.notion.so/Network-17becd059e428064a253ca784effaa0d",},
+      { title: "Networking Basics", description: "Understand the fundamentals of computer networking and protocols." , notionLink: "https://www.notion.so/Network-17becd059e428064a253ca784effaa0d",hot: true},
       { title: "Network Security", description: "Learn how to secure networks against threats and vulnerabilities." },
       { title: "Wireshark for Beginners", description: "Analyze network traffic using Wireshark." },
       { title: "Cisco Packet Tracer", description: "Simulate and visualize network setups with Cisco Packet Tracer." },
@@ -84,7 +84,7 @@ const lessonsData = {
     title: "Software Security",
     content: "Welcome to the Cybersecurity course. Here you will learn about cybersecurity principles, threat analysis, ",
     courses: [
-      { title: "Software Security Fundamentals", description: "Montri Supattatham" ,notionLink: "https://www.notion.so/Software-Security-17decd059e42808dbef6fb6bdd8b62dd"},
+      { title: "Software Security Fundamentals", description: "Montri Supattatham" ,notionLink: "https://www.notion.so/Software-Security-17decd059e42808dbef6fb6bdd8b62dd",hot: true},
       { title: "Null", description: "Understand how to identify and respond to cyber threats." },
       { title: "Null", description: "Learn penetration testing with Metasploit." },
       { title: "Null", description: "Explore essential tools like Wireshark and Nessus." },

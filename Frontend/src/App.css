@@ -179,7 +179,26 @@ body {
     font-size: 3rem;
   }
   .home-container h2 {
+    font-size: 4rem;
+  }
+  .home-container button{
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .about-grid svg{
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .about h1 {
     font-size: 3rem;
+  }
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .home-container h2 {
+    font-size: 2rem;
   }
   .home-container button{
     padding: 0.5rem;
