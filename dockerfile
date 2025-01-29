@@ -1,29 +1,29 @@
-# ใช้ Node.js base image สำหรับ build
-FROM node:16 AS build-stage
+# ใช้ Node.js เวอร์ชันที่เหมาะสม
+FROM node:18-alpine AS build
 
-# กำหนด working directory ใน container
+# กำหนด working directory
 WORKDIR /Frontend
 
 # คัดลอกไฟล์ package.json และ package-lock.json
-COPY package*.json ./
+COPY package.json package-lock.json ./
 
 # ติดตั้ง dependencies
 RUN npm install
 
-# คัดลอก source code ทั้งหมด
+# คัดลอกไฟล์ทั้งหมดไปยัง container
 COPY . .
 
 # สร้าง production build
 RUN npm run build
 
-# ใช้ Nginx base image สำหรับ deploy
-FROM nginx:stable AS production-stage
+# ใช้ nginx เพื่อเสิร์ฟไฟล์ static
+FROM nginx:alpine
 
-# คัดลอก build files ไปยัง Nginx
-COPY --from=build-stage /app/build /usr/share/nginx/html
+# คัดลอกไฟล์ build ไปยัง nginx
+COPY --from=build /app/dist /usr/share/nginx/html
 
-# เปิด port 80
+# เปิดพอร์ต 80
 EXPOSE 80
 
-# รัน Nginx
+# รัน nginx
 CMD ["nginx", "-g", "daemon off;"]

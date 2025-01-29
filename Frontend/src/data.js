@@ -3,8 +3,8 @@ const lessonsData = {
     title: "Frontend Development",
     content: "Welcome to the Frontend Development course. Here you will learn about HTML, CSS, JavaScript, and various frontend frameworks like React, Angular, and Vue.",
     courses: [
-      { title: "Basic Frontend Concepts", description: "Learn the basics of frontend development, including HTML structure and semantic elements." },
-      { title: "HTML Syntax", description: "Understand HTML tags, attributes, and how to structure web pages." },
+      { title: "Basic Frontend Concepts", description: "Learn the basics of frontend development, including HTML structure and semantic elements." , hot: true},
+      { title: "HTML Syntax", description: "Understand HTML tags, attributes, and how to structure web pages." , hot: true},
       { title: "CSS Fundamentals", description: "Learn how to style web pages using CSS, including selectors, properties, and the box model." },
       { title: "Introduction to JavaScript", description: "Dive into JavaScript basics and understand how to make web pages interactive." },
       { title: "Frontend Frameworks Overview", description: "Get introduced to popular frontend frameworks like React, Angular, and Vue." }
@@ -25,22 +25,22 @@ const lessonsData = {
     title: "Database Management",
     content: "Welcome to the Database Management course. Here you will learn about relational and non-relational databases, SQL, and database design principles.",
     courses: [
-      { title: "Introduction to Databases",   notionLink:"https://youtu.be/_20qqjSmikI"},
-      { title: "Advantages of Databases ",   notionLink:"https://youtu.be/vX91NHzNcmY"},
-      { title: "Database vs File-based system",   notionLink:"https://youtu.be/TOHNjY6Is-Y"},
-      { title: "Classification of Databases", notionLink: "https://youtu.be/QLc6ny0LvPs"},
-      { title: "Database Structures",  notionLink:"https://youtu.be/2ee3pFbNGA0"},
-      { title: "Applications of Databases ", notionLink:"https://youtu.be/HAaI2LyrDnM"},
-      { title: "Database Tools and Utilities  ", notionLink:"https://youtu.be/In534rEC6Po"},
-      { title: "Introduction to SQL Language  ",  notionLink:"https://youtu.be/Mi25ujRQtbE"},
-      { title: "Create Database  ",  notionLink:"https://youtu.be/P0jKvGt0c1o"}    
+      { title: "Introduction to Databases (clip)",   notionLink:"https://youtu.be/_20qqjSmikI"},
+      { title: "Advantages of Databases  (clip)",   notionLink:"https://youtu.be/vX91NHzNcmY"},
+      { title: "Database vs File-based system (clip)",   notionLink:"https://youtu.be/TOHNjY6Is-Y"},
+      { title: "Classification of Databases (clip)", notionLink: "https://youtu.be/QLc6ny0LvPs"},
+      { title: "Database Structures (clip)",  notionLink:"https://youtu.be/2ee3pFbNGA0"},
+      { title: "Applications of Databases  (clip)", notionLink:"https://youtu.be/HAaI2LyrDnM"},
+      { title: "Database Tools and Utilities   (clip)", notionLink:"https://youtu.be/In534rEC6Po"},
+      { title: "Introduction to SQL Language   (clip)",  notionLink:"https://youtu.be/Mi25ujRQtbE"},
+      { title: "Create Database   (clip)",  notionLink:"https://youtu.be/P0jKvGt0c1o"}    
     ],
   },
   programming: {
     title: "Programming Fundamentals",
-    content: "Welcome to the Programming Fundamentals course. Here you will learn about basic programming concepts, data structures, and algorithms using languages like Python, Java, and C++.",
+    content: "Welcome to the Programming Fundamentals course. Here you will learn about basic programming concepts, data structures, and algorithms that Dr. Krinagkrai taught.",
     courses: [
-      { title: " Basics Programming", description: "Dr. Kriangkrai" },
+      { title: " Basics Programming", description: "Dr. Kriangkrai", hot: true },
       { title: "Data Structures Introduction", description: "Understand arrays, lists, stacks, and queues." },
       { title: "Algorithm Basics", description: "Learn about sorting, searching, and problem-solving techniques." },
       { title: "Python for Beginners", description: "Start programming with Python, one of the most beginner-friendly languages." },
@@ -51,7 +51,7 @@ const lessonsData = {
     title: "UX/UI Design",
     content: "Welcome to the UX/UI Design course. Here you will learn about user experience design, user interface design, and tools like Figma and Adobe XD.",
     courses: [
-      { title: "Introduction to UX/UI", description: "Learn the basics of user experience and interface design." },
+      { title: "Introduction to UX/UI", description: "Learn the basics of user experience and interface design." , notionLink: "https://www.notion.so/Ux-Ui-13eecd059e42807b809cc3cb0dbb2e6d" },
       { title: "Design Principles", description: "Understand typography, color theory, and layout design." },
       { title: "Prototyping with Figma", description: "Create interactive prototypes using Figma." },
       { title: "User Research Basics", description: "Learn how to conduct user interviews and usability tests." },
@@ -81,14 +81,14 @@ const lessonsData = {
     ],
   },
   security: {
-    title: "Cybersecurity",
-    content: "Welcome to the Cybersecurity course. Here you will learn about cybersecurity principles, threat analysis, and tools like Metasploit and Wireshark.",
+    title: "Software Security",
+    content: "Welcome to the Cybersecurity course. Here you will learn about cybersecurity principles, threat analysis, ",
     courses: [
-      { title: "Cybersecurity Fundamentals", description: "Learn the basics of securing systems and networks." },
-      { title: "Threat Analysis", description: "Understand how to identify and respond to cyber threats." },
-      { title: "Introduction to Metasploit", description: "Learn penetration testing with Metasploit." },
-      { title: "Security Tools Overview", description: "Explore essential tools like Wireshark and Nessus." },
-      { title: "Advanced Cybersecurity Techniques", description: "Dive into ethical hacking, cryptography, and incident response." }
+      { title: "Software Security Fundamentals", description: "Montri Supattatham" ,notionLink: "https://www.notion.so/Software-Security-17decd059e42808dbef6fb6bdd8b62dd"},
+      { title: "Null", description: "Understand how to identify and respond to cyber threats." },
+      { title: "Null", description: "Learn penetration testing with Metasploit." },
+      { title: "Null", description: "Explore essential tools like Wireshark and Nessus." },
+      { title: "Null", description: "Dive into ethical hacking, cryptography, and incident response." }
     ],
   },
 };

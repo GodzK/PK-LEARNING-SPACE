@@ -38,13 +38,13 @@ function Learning() {
             <h2>Year 1</h2>
             <div className="about-grid">
               {data.courses.map((lesson, index) => (
-                <div key={index} className="lesson-card">
+                <div key={index} className="lesson-card" style={{backgroundColor: lesson.hot ? "red" : "black"}}>
                   <h3>{lesson.title}</h3>
                   <p>{lesson.description}</p>
                   <button
                     className="view-more-btn"
-                    onClick={() => window.open(lesson.notionLink, "_blank")}
-                  >
+                    onClick={() => window.open(lesson.notionLink, "_blank") }
+                    style={{backgroundColor: lesson.hot ? "black" : "green"}}>
                     View More
                   </button>
                 </div>
